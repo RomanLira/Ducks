@@ -51,10 +51,6 @@
     <Compile Include="Decorator\Topping\Toppings.cs" />
     <Compile Include="Iterator\Menus\IMenu.cs" />
     <Compile Include="Iterator\Menus\PrintMenu.cs" />
-    <Compile Include="PSingleton\Ducks\IBaseDuck.cs" />
-    <Compile Include="PSingleton\Ducks\MallardDuck.cs" />
-    <Compile Include="PSingleton\Ducks\RubberDuck.cs" />
-    <Compile Include="PSingleton\Ducks\WoodDuck.cs" />
     <Compile Include="PSingleton\Singleton.cs" />
     <Compile Include="Strategy\Ducks\BaseDuck.cs" />
     <Compile Include="Strategy\Ducks\MallardDuck.cs" />
