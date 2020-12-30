@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6E1064F-BAD0-40A4-8D01-DE22C196C56F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Duckling</RootNamespace>
+    <AssemblyName>Duckling</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Decorator\Meat\BBQDuck.cs" />
+    <Compile Include="Decorator\Meat\BBQTurkey.cs" />
+    <Compile Include="Decorator\Meat\Meats.cs" />
+    <Compile Include="Decorator\Topping\ExxxtraChile.cs" />
+    <Compile Include="Decorator\Topping\OnionRings.cs" />
+    <Compile Include="Decorator\Topping\Toppings.cs" />
+    <Compile Include="Iterator\Menus\IMenu.cs" />
+    <Compile Include="Iterator\Menus\PrintMenu.cs" />
+    <Compile Include="PSingleton\Ducks\IBaseDuck.cs" />
+    <Compile Include="PSingleton\Ducks\MallardDuck.cs" />
+    <Compile Include="PSingleton\Ducks\RubberDuck.cs" />
+    <Compile Include="PSingleton\Ducks\WoodDuck.cs" />
+    <Compile Include="PSingleton\Singleton.cs" />
+    <Compile Include="Strategy\Ducks\BaseDuck.cs" />
+    <Compile Include="Strategy\Ducks\MallardDuck.cs" />
+    <Compile Include="Strategy\Ducks\RubberDuck.cs" />
+    <Compile Include="Strategy\Ducks\UnusualDuck.cs" />
+    <Compile Include="Strategy\Ducks\WoodDuck.cs" />
+    <Compile Include="Strategy\Fly\BalloonFly.cs" />
+    <Compile Include="Strategy\Fly\CanFly.cs" />
+    <Compile Include="Strategy\Fly\CannotFly.cs" />
+    <Compile Include="Strategy\Interface\IFly.cs" />
+    <Compile Include="Strategy\Interface\IQuack.cs" />
+    <Compile Include="Strategy\Interface\ISwim.cs" />
+    <Compile Include="Strategy\Quack\CannotQuack.cs" />
+    <Compile Include="Strategy\Quack\CanQuack.cs" />
+    <Compile Include="Strategy\Quack\Squeak.cs" />
+    <Compile Include="Strategy\Quack\UnusualQuack.cs" />
+    <Compile Include="Strategy\Swim\Walker.cs" />
+    <Compile Include="Strategy\Swim\Swimmer.cs" />
+    <Compile Include="Strategy\Swim\WoodSwim.cs" />
+    <Compile Include="Iterator\Menus\DuckMenu.cs" />
+    <Compile Include="Iterator\Iterators\DuckMenuIterator.cs" />
+    <Compile Include="Iterator\Iterators\IIterator.cs" />
+    <Compile Include="Iterator\MenuItem.cs" />
+    <Compile Include="Iterator\Menus\TurkeyMenu.cs" />
+    <Compile Include="Iterator\Iterators\TurkeyMenuIterator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Adapter\TurkeyAdapter.cs" />
+    <Compile Include="Adapter\WildDuck.cs" />
+    <Compile Include="Adapter\Interface\IDuck.cs" />
+    <Compile Include="Adapter\Interface\ITurkey.cs" />
+    <Compile Include="Adapter\WildTurkey.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
